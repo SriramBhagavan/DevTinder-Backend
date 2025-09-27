@@ -2,7 +2,7 @@
 const mongoose=require('mongoose')
 
 const connectDB=async ()=>{
-    await mongoose.connect("mongodb+srv://Bhagavan:Mongodb%40545@cluster0.gnjempb.mongodb.net/devTinder");
+    await mongoose.connect(process.env.DB_CONNECTION_SECRET);
 
 
 }
